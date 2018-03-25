@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>page-1-01首页</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+	<div class="table index-foot foot_fixed">
+		<a href="javascript:;" class="table-cell active"><i class="i1"></i><p>首页</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i2"></i><p>商城</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i3"></i><p>附近</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i4"></i><p>关注</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i5"></i><p>我的</p></a>
+	</div>
+	<!--首页底部结束-->
+	<section class="main">
+		<div class="swiper-container ind-banner">
+			<div class="swiper-wrapper">
+				<a  href="javascript:;"  class="swiper-slide">
+					<img src="images/index-mv.png" alt="2:1,640*320" class="imgm">
+				</a>
+				<a  href="javascript:;"  class="swiper-slide">
+					<img src="images/index-mv.png" alt="2:1,640*320" class="imgm">
+				</a>
+				<a  href="javascript:;"  class="swiper-slide">
+					<img src="images/index-mv.png" alt="2:1,640*320" class="imgm">
+				</a>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- banner end -->
+		<script src="weui/js/swiper.js"></script>                       <!--已经引入swiper js了-->
+		<script>
+		$(function(){
+			var swiperWidth = $(".ind-banner").width();
+				swiperHeight = swiperWidth * 0.5;
+				$(".ind-banner").css("height",swiperHeight);
+			$(".ind-banner").swiper({
+				pagination: '.swiper-pagination',
+				loop: true,
+				autoplay: 3000,
+				autoplayDisableOnInteraction : false,
+			});
+		});
+		</script>
+		
+		
+		
+		
+		
+		<!--轮播图结束-->
+		<div class="index-top-wrap">
+			<div class="index-nav-wrap">
+				<div class="index-nav-top nav1 table" style="padding-bottom:20px;">
+					<a href="javascript:;" class="table-cell"><i class="i1"></i><h2>商城</h2></a>
+					<a href="javascript:;" class="table-cell"><i class="i2"></i><h2>人气榜</h2></a>
+					<a href="javascript:;" class="table-cell"><i class="i3"></i><h2>礼品</h2></a>
+					<!--<a href="javascript:;" class="table-cell"><i class="i4"></i><h2>团队</h2></a>-->
+					<a href="javascript:;" class="table-cell"><i class="i5"></i><h2>打赏</h2></a>
+				</div>
+				<!--<div class="index-nav-top nav2 table">
+					<a href="javascript:;" class="table-cell"><i class="i5"></i><h2>打赏</h2></a>
+					<a href="javascript:;" class="table-cell"><i class="i6"></i><h2>VIP特权</h2></a>
+					<a href="javascript:;" class="table-cell"><i class="i7"></i><h2>常见问题</h2></a>
+					<a href="javascript:;" class="table-cell"><i class="i8"></i><h2>商务合作</h2></a>
+				</div>	-->
+			</div>
+			<!--结束8个nav-->
+			<!--<a   href="javascript:;"   class="m-list-flex index-nav-news m-arrow-right">
+				<div class="pic-view"><img src="images/index-flower.png" alt=""  class="imgm"/></div>
+				<div class="m-cell-bd">
+					<h3 class="multi-line">魔都最新潮面包店开业了，最ing的单品，更有网红单品限量供应</h3>
+					<p>3456人去围观了</p>
+				</div>
+				<div class="m-cell-rt"></div>
+			</a>
+		</div>-->
+		
+		
+		
+		
+		<!--结束首页顶部-->
+		<div class="index-rec-wrap relative">
+			<h3 class="index-tr-icon"><div class="index-rec-tit"><i><img src="images/index-heart.png" alt="" class="imgm"/></i><span>人气推荐</span></div></h3>
+			<a href="javascript:;" class="change-other">换一批</a>
+			<ul class="index-rec clearfix">
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">佐罗与蚂蚁</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">小龟不会飞</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">之乎者也</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">江边城外</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">我家二姑娘</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">哥哥咯咯哒</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--结束人气推荐-->
+		<div class="pri-chat-wrap">
+			<img src="images/index-mv.png" alt="" class="imgm"/>
+			<div class="m-list-flex mv-connect">
+				<div class="m-cell-bd">
+					<h5 class="single-line">风吹过的夏天</h5>
+					<p class="single-line">冬天的阳光暖暖的，约我下午茶吧</p>
+				</div>
+				<a href="javascript:;" class="sl-btn">私聊</a>
+			</div>
+		</div>
+		<!--结束私聊-->
+		<div class="shops-rec-wrap">
+			<h3 class="index-tr-icon"><div class="index-rec-tit"><i><img src="images/hot-rec-icon.png" alt="" class="imgm"/></i><span>推荐门店</span></div></h3>
+			<ul class="rec-shop-list">
+				<li>
+					<a href="javascript:;">
+						<h4 class="single-line">紫罗兰鲜花书店</h4>
+						<p class="site-flo"><span>万体馆</span>1456m</p>
+						<ul class="flo-pic-display clearfix">
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+						</ul>
+						<p class="intro-place">一个很不错的地方，有格调，很适合下午茶</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<h4 class="single-line">可可西里</h4>
+						<p class="site-flo"><span>万体馆</span>1456m</p>
+						<ul class="flo-pic-display clearfix">
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+						</ul>
+						<p class="intro-place">一个很不错的地方，有格调，很适合下午茶</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<h4 class="single-line">梦里小溪奶茶店</h4>
+						<p class="site-flo"><span>万体馆</span>1456m</p>
+						<ul class="flo-pic-display clearfix">
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+						</ul>
+						<p class="intro-place">一个很不错的地方，有格调，很适合下午茶</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<h4 class="single-line">紫罗兰鲜花书店</h4>
+						<p class="site-flo"><span>万体馆</span>1456m</p>
+						<ul class="flo-pic-display clearfix">
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+						</ul>
+						<p class="intro-place">一个很不错的地方，有格调，很适合下午茶</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<h4 class="single-line">小天使格格屋</h4>
+						<p class="site-flo"><span>万体馆</span>1456m</p>
+						<ul class="flo-pic-display clearfix">
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+							<li><div class="pic-view"><img src="images/fl-sh.png" alt="" class="imgm"/></div></li>
+						</ul>
+						<p class="intro-place">一个很不错的地方，有格调，很适合下午茶</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+
+</body>
+</html>

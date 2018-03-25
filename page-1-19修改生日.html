@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>page-1-13修改个人信息</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+	<section class="main">
+		<ul class="modify-info-bot" style="margin-top:0;">
+			<li class="table">
+				<span class="table-cell">昵称</span>
+				<div class="table-cell">
+					<input type="text" class="form-unify" value="请叫我女王大人"/>
+				</div>
+			</li>
+			<li class="table">
+				<span class="table-cell">性别</span>
+				<div class="table-cell">
+					<input type="text" class="form-unify" value="女"/>
+				</div>
+			</li>
+			<li class="table">
+				<span class="table-cell">生日</span>
+				<div class="table-cell">
+					<input type="text" class="form-unify weui_input" id="date"  value="1990-05-04"/>
+				</div>
+			</li>
+		</ul>
+
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+ <script src="weui/lib/jquery-2.1.4.js"></script>
+<script src="weui/lib/fastclick.js"></script>
+
+
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+
+<script src="weui/js/jquery-weui.js"></script>
+<script>
+      $("#date").calendar({
+        onChange: function (p, values, displayValues) {
+          console.log(values, displayValues);
+        }
+      });
+ </script>
+
+
+
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+
+</body>
+</html>

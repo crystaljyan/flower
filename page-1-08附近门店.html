@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>page-1-08附近门店</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+	<div class="table index-foot foot_fixed">
+		<a href="javascript:;" class="table-cell active"><i class="i1"></i><p>首页</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i2"></i><p>商城</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i3"></i><p>附近</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i4"></i><p>关注</p></a>
+		<a href="javascript:;" class="table-cell"><i class="i5"></i><p>我的</p></a>
+	</div>
+	<!--首页底部结束-->
+	<section class="main" style="padding-top:43px;">
+		<div class="table near-flowers">
+			<a href="javascript:;" class="table-cell"><span>花粉</span></a>
+			<a href="javascript:;" class="table-cell  active"><span>门店</span></a>
+		</div>
+		<ul class="ser-block  clearfix">
+			<li class="active"><a href="javascript:;">全部</a></li>
+			<li><a href="javascript:;">休闲娱乐</a></li>
+			<li><a href="javascript:;">生活服务</a></li>
+			<li><a href="javascript:;">酒店</a></li>
+			<li><a href="javascript:;">美食</a></li>
+		</ul>
+
+		
+		<div class="shop-banner-wrap swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban1.png" alt="" class="imgm"/></div><h3 class="single-line">夏丽克丽</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban2.png" alt="" class="imgm"/></div><h3 class="single-line">克莉丝汀</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban3.png" alt="" class="imgm"/></div><h3 class="single-line">双鱼座</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban1.png" alt="" class="imgm"/></div><h3 class="single-line">夏丽克丽</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban3.png" alt="" class="imgm"/></div><h3 class="single-line">双鱼座</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+				<li class="swiper-slide"><a href="javascript:;"><div class="pic-view"><img src="images/ban3.png" alt="" class="imgm"/></div><h3 class="single-line">双鱼座</h3><p class="single-line"><span>万体馆</span>1456m</p></a></li>
+			</ul>
+		</div>
+	  <script src="weui/js/swiper.js"></script> 
+		<script>
+		    var swipershop = new Swiper('.shop-banner-wrap', {
+		        slidesPerView: 3.2,
+		        spaceBetween:6,
+		        freeMode: true,
+		
+		    });
+		</script>
+	<!--结束轮播图-->
+	<ul class="md-list">
+		<li>
+			<a href="javascript:;" class="m-list-flex">
+				<div class="pic-view"><img src="images/ggw.png" alt="" class="imgm"/></div>
+				<div class="m-cell-bd">
+					<h2 class="single-line">梦里小溪奶茶店</h2>
+					<p class="single-line"><span>万体</span>1456m</p>
+					<div class="star-show md-star" data-score="4.5"></div>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;" class="m-list-flex">
+				<div class="pic-view"><img src="images/ggw.png" alt="" class="imgm"/></div>
+				<div class="m-cell-bd">
+					<h2 class="single-line">小天使格格屋</h2>
+					<p class="single-line"><span>万体</span>1456m</p>
+					<div class="star-show md-star" data-score="4.5"></div>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;" class="m-list-flex">
+				<div class="pic-view"><img src="images/ggw.png" alt="" class="imgm"/></div>
+				<div class="m-cell-bd">
+					<h2 class="single-line">生如夏花咖啡厅</h2>
+					<p class="single-line"><span>万体</span>1456m</p>
+					<div class="star-show md-star" data-score="4.5"></div>
+				</div>
+			</a>
+		</li>
+	</ul>
+		
+		
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+
+
+ <script type="text/javascript">
+      	$(function (){
+      		$(document).on('click','.near-flowers a:last-child',function (){
+      			$('.ser-block').show();
+      		});
+      	});
+      </script>
+
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+
+</body>
+</html>

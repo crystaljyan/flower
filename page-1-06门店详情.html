@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>page-1-06门店详情</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main">
+		<div class="swiper-container shop-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/shop.png" alt="750*320" class="imgm">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/shop.png" alt="750*320" class="imgm">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/shop.png" alt="750*320" class="imgm">
+				</div>
+			</div>
+			<!--<div class="swiper-pagination"></div>-->
+		</div>
+		<!-- banner end -->
+		<script src="weui/js/swiper.js"></script>                       <!--已经引入swiper js了-->
+		<script>
+		$(function(){
+			var swiperWidth = $(".shop-banner").width();
+				swiperHeight = swiperWidth * 0.426;
+				$(".shop-banner").css("height",swiperHeight);
+			$(".shop-banner").swiper({
+//				pagination: '.swiper-pagination',
+				loop: true,
+				autoplay: 3000,
+				autoplayDisableOnInteraction : false,
+			});
+		});
+		</script>
+		<!--结束轮播图-->
+		<div class="shop-details-wrap">
+			<div class="shop-top">
+				<div class="dm">
+					<h1 class="single-line">梦里小溪奶茶店<div class="star-show sh-star" data-score="4.5"></div></h1>
+					<div class="label-self clearfix">
+						<span style="background-color: #FF9999;">下午茶</span>
+						<span style="background-color: #48DDC9;">小吃</span>
+					</div>
+					<div class="rc-index"><span>推荐指数: 4.5</span><span>娱乐指数: 5.0</span><span>网红指数: 4.0</span></div>
+				</div>
+			</div>
+			<div class="shop-bot m-list-flex">
+				<span></span>
+				<div class="m-cell-bd">
+					<h3 class="single-line">灵岩南路1477号（新时代商城5楼）</h3>
+					<p class="single-line">该商铺距离您1456m</p>
+				</div>
+				<a href="javascript:;" class="btel"></a>
+			</div>
+		</div>
+		<!--结束店铺介绍-->
+		<div class="entertain-star-wrap">
+			<h2><i><img src="images/06yl.png" alt="" class="imgm"/></i>娱乐之星</h2>
+			<ul class="index-rec clearfix">
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">佐罗与蚂蚁</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">小龟不会飞</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="pic-view">
+							<img src="images/index-head-pic.png" alt=""  class="imgm"/>
+						</div>		
+						<h4 class="single-line">之乎者也</h4>
+						<div class="index-rec-flo">2400<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	<!--结束娱乐之星-->
+		<div class="shop-tj-wrap">
+			<h2><i><img src="images/06tj.png" alt="" class="imgm"/></i>门店推荐</h2>
+			<div class="shop-recommend-list-wrap">
+				<ul class="shop-recommend-list  clearfix">
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/bql.png" alt="" class="imgm"/></div><p class="single-line">奶茶冰淇凌</p></a></li>
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/nc.png" alt="" class="imgm"/></div><p class="single-line">丝袜奶茶</p></a></li>
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/ljc.png" alt="" class="imgm"/></div><p class="single-line">鲜奶乌龙茶</p></a></li>
+				</ul>
+			</div>
+		</div>
+	<!--结束门店推荐-->
+	<div class="shop-photo-wrap">
+			<h2><i><img src="images/06xc.png" alt="" class="imgm"/></i>门店照片</h2>
+			<div class="shop-recommend-list-wrap">
+				<ul class="shop-recommend-list  clearfix">
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/zp1.png" alt="" class="imgm"/></div></a></li>
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/zp2.png" alt="" class="imgm"/></div></a></li>
+					<li><a href="javascript:;"><div class="pic-view"><img src="images/zp3.png" alt="" class="imgm"/></div></a></li>
+				</ul>
+			</div>
+		</div>
+	<!--结束门店照片-->
+	<div class="this-shop-wrap">
+			<h2><i><img src="images/06zl.png" alt="" class="imgm"/></i>门店资料</h2>
+			<div class="this-shop-info-wrap">
+				<ul class="this-shop-info">
+					<li class="table"><span class="table-cell vt">电话</span><p class="table-cell vt">021-6543567</p></li>
+					<li class="table"><span class="table-cell vt">特色</span><p class="table-cell vt">鲜奶奶茶，搭配植物奶油</p></li>
+					<li class="table"><span class="table-cell vt">营业时间</span><p class="table-cell vt">周一至周日 11:00-15:00 17:00-22:00</p></li>
+					<li class="table"><span class="table-cell vt">门店介绍</span><p class="table-cell vt">一家很有格调的奶茶店，所有的奶茶采用纯鲜奶制作</p></li>
+					
+				</ul>
+			</div>
+		</div>
+	<!--结束门店资料-->
+
+
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+
+</body>
+</html>

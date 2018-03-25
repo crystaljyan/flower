@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>page-1-40我的团队－店长－时间选择 </title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+	<section class="main"style="padding-top:44px;">
+		<div class="table near-flowers">
+			<a href="javascript:;" class="table-cell active"><span>当天</span></a>
+			<a href="javascript:;" class="table-cell"><span>本周</span></a>
+			<a href="javascript:;" class="table-cell"><span>筛选</span></a>
+		</div>
+		<ul class="near-flowers-list rank-ne-fl bgf">
+			<li>
+				<a href="javascript:;" class="m-list-flex">
+					<div class="pic-view"><img src="images/nwdr.png" alt="" class="imgm"/></div>
+					<div class="m-cell-bd">
+						<h2 class="single-line">请叫我女王大人</h2>
+						<div class="time-dash clearfix">
+							<p>加入时间:2018-05-06</p>
+						</div>
+					</div>
+					<div class="index-rec-flo ">已获得100<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="m-list-flex">
+					<div class="pic-view"><img src="images/nwdr.png" alt="" class="imgm"/></div>
+					<div class="m-cell-bd">
+						<h2 class="single-line">请叫我女王大人</h2>
+						<div class="time-dash clearfix">
+							<p>加入时间:2018-05-06</p>
+						</div>
+					</div>
+					<div class="index-rec-flo ">已获得100<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="m-list-flex">
+					<div class="pic-view"><img src="images/nwdr.png" alt="" class="imgm"/></div>
+					<div class="m-cell-bd">
+						<h2 class="single-line">请叫我女王大人</h2>
+						<div class="time-dash clearfix">
+							<p>加入时间:2018-05-06</p>
+						</div>
+					</div>
+					<div class="index-rec-flo ">已获得100<i><img src="images/flower.png" alt="" class="imgm"/></i></div>
+				</a>
+			</li>
+		</ul>
+		
+		
+		<!--筛选日历-->
+		<div class="calendar-pop show">
+			<div class="m-list-flex">
+				<div class="box-date m-cell-bd"><i><img src="images/calenlar.png" alt="" class="imgm"/></i><input type="text" class="weui_input form-unify "  id="date1" placeholder="请输入开始日期"/></div>
+				<b></b>
+				<div class="box-date m-cell-bd"><i><img src="images/calenlar.png" alt="" class="imgm"/></i><input type="text" class=" weui_input form-unify" id="date2" placeholder="请输入结束日期"/></div>
+				<a href="javascript:;" class="calendar-ser">查询</a>
+			</div>
+		</div>
+		<div class="bg-grey" style="display:none;"></div>
+		<script type="text/javascript">
+      	$(function (){
+      		$(document).on('click','#date1,#date2',function (){
+      			$('.bg-grey').show();
+      		});
+      		$(document).on('click','.bg-grey,.picker-modal-inner',function (){
+      			$('.bg-grey').hide();
+      		});
+      		$(document).on('click','#date1,#date2',function (){
+      			$('.bg-grey').show();
+      		});
+      	});
+      </script>
+
+		
+		
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+
+<script src="weui/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+      $("#date1").calendar({
+        onChange: function (p, values, displayValues) {
+          console.log(values, displayValues);
+        }
+      });
+</script>
+<script>
+      $("#date2").calendar({
+        onChange: function (p, values, displayValues) {
+          console.log(values, displayValues);
+        }
+      });
+</script>
+
+
+
+
+
+</body>
+</html>

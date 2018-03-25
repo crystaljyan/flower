@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<title>新增企业用户和签约用户</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css" />
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="weui/lib/jquery-2.1.4.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="wrap">
+	<section class="main" style="padding-top:45px;">
+		<div class="users-tab table">
+			<a href="javascript:;" class="table-cell a1 active "><span>企业用户</span></a>
+			<a href="javascript:;" class="table-cell a2"><span>签约用户</span></a>
+		</div>
+		<form action="" method="post" class="form1">
+			<ul class="ent-user">
+				<li class="m-list-flex">
+					<span>企业码</span>
+					<div class="m-cell-bd"><input type="text" class="form-unify"/></div>
+				</li>
+				<li class="m-list-flex">
+					<span>用户姓名</span>
+					<div class="m-cell-bd"><input type="text" class="form-unify"/></div>
+				</li>
+				<li class="m-list-flex">
+					<span>手机号码</span>
+					<div class="m-cell-bd"><input type="text" class="form-unify"/></div>
+				</li>
+			</ul>
+			<div class="neb-wrap"><button>确定</button></div>
+		</form>
+		
+		<form action="" method="post" class="form2" style="display:none;">
+			<ul class="ent-user">
+				<li class="m-list-flex">
+					<span>用户姓名</span>
+					<div class="m-cell-bd"><input type="text" class="form-unify"/></div>
+				</li>
+				<li class="m-list-flex">
+					<span>手机号码</span>
+					<div class="m-cell-bd"><input type="number" class="form-unify"/></div>
+				</li>
+				<li class="m-list-flex">
+					<span>返佣比例</span>
+					<div class="m-cell-bd"><input type="text" class="form-unify"/></div>
+				</li>
+			</ul>
+			<div class="neb-wrap"><button>确定</button></div>
+		</form>
+	</section>
+	<!-- main end -->
+
+</section>
+<!-- wrap end -->
+<script>
+	$(function(){
+		
+		$(document).on('click','.users-tab .a1',function(){
+			$('.users-tab .a2').removeClass('active');
+			$(this).addClass('active');
+			$('.form2').hide();
+			$('.form1').show();
+		});
+		$(document).on('click','.users-tab .a2',function(){
+			$('.users-tab .a1').removeClass('active');
+			$(this).addClass('active');
+			$('.form1').hide();
+			$('.form2').show();
+		});
+	})
+</script>
+
+
+
+<!-- jquery-weui插件 -->
+<script src="weui/js/jquery-weui.min.js"></script>
+<!-- 通用js -->
+<script src="js/functions.js"></script>
+
+</body>
+</html>
